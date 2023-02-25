@@ -35,8 +35,7 @@ If you face any issue [follow this official doc of DDEV](https://ddev.readthedoc
 
 To migrate existing drupal project follow below steps:
 
-- Copy your existing Drupal project into a new directory on your local machine or navigate to your existing drupal project or clone repo . This directory will be the root directory for your DDEV project.
-- Open a terminal window and navigate to the root directory of your DDEV project.
+- Copy your existing Drupal project into a new directory on your local machine or navigate to your existing drupal project or clone repo . This directory will be the root directory for your DDEV project than Open a terminal window and navigate to the root directory of your DDEV project.
 - Run the ddev config command to generate a new configuration file for your project. You will be prompted to answer a series of questions about your project, including the project name, web server type, and PHP version.
 
   Example: **ddev config**
@@ -66,7 +65,8 @@ hooks:
 These lines tell DDEV to run composer install after starting the containers, and to run drush cr after importing the database. This will ensure that your Drupal site is set up correctly.
 
 - You will need to export the database from your existing drupal site and import it into your DDEV environment. To do this, first export the database from your existing site using a tool like phpMyAdmin or the command line. Save the database export file to a location you can access from your DDEV environment.
-**Note:** Clear cache than export your database.
+
+**Note:** Clear your cache before exporting your database. This will help you save more space.
 
 - In your DDEV environment, run the ddev import-db command to import the database into your site.
 
