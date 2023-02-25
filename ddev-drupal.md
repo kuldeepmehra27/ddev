@@ -84,41 +84,73 @@ These lines tell DDEV to run composer install after starting the containers, and
 
 ## [DDEV most used commands](https://ddev.readthedocs.io/en/latest/users/usage/cli/) ##
 
-1. **ddev config:** This command is used to create a new configuration file for your project. The configuration file specifies the settings for your local development environment, such as the web server, database, and PHP version. Example: **ddev config**
+1. **ddev config:** This command is used to create a new configuration file for your project. The configuration file specifies the settings for your local development environment, such as the web server, database, and PHP version. 
+
+  Example: **ddev config**
 
     Running this command will prompt you for information about your project, such as the name of your project, the web server you want to use (e.g. Apache or Nginx), and the version of PHP you want to use. Once you have provided all the necessary information, Ddev will generate a configuration file (.ddev/config.yaml) in your project directory.
 
-2. **ddev install:** This command is used to create and start your local development environment based on the configuration specified in your .ddev/config.yaml file. Example: **ddev install**
+2. **ddev install:** This command is used to create and start your local development environment based on the configuration specified in your .ddev/config.yaml file. 
+    
+    Example: **ddev install**
 
     Running this command will use Docker to create a containerized environment for your project, based on the settings specified in your .ddev/config.yaml file. This will include creating a web server, database server, and other necessary services.
 
-3. **ddev start** - This command starts your ddev project by spinning up the required containers. Example: **ddev start**
+3. **ddev start** - This command starts your ddev project by spinning up the required containers. 
+    
+    Example: **ddev start**
 
-4. **ddev stop** - This command stops your ddev project by shutting down the containers. Example: **ddev stop**
+4. **ddev stop** - This command stops your ddev project by shutting down the containers. 
+    
+    Example: **ddev stop**
 
-5. **ddev restart** - This command restarts your ddev project by stopping and then starting the containers. Example: **ddev restart**
+5. **ddev restart** - This command restarts your ddev project by stopping and then starting the containers. 
+    
+    Example: **ddev restart**
 
-6. **ddev describe** - This command shows detailed information about your ddev project, including container statuses and environment variables. Example: **ddev describe**
+6. **ddev describe** - This command shows detailed information about your ddev project, including container statuses and environment variables. 
+    
+    Example: **ddev describe**
 
-7. **ddev ssh** - This command allows you to SSH into the web container of your ddev project. Example: **ddev ssh**
+7. **ddev ssh** - This command allows you to SSH into the web container of your ddev project. 
+    
+    Example: **ddev ssh**
 
-8. **ddev import-db** - This command imports a database into your ddev project from a SQL file. Example: **ddev import-db --src=/path/to/database.sql**
+8. **ddev import-db** - This command imports a database into your ddev project from a SQL file. 
+    
+    Example: **ddev import-db --src=/path/to/database.sql**
 
-9. **ddev export-db** - This command exports the database from your ddev project to a SQL file. Example:**ddev export-db --target=/path/to/database.sql**
+9. **ddev export-db** - This command exports the database from your ddev project to a SQL file. 
+    
+    Example:**ddev export-db --target=/path/to/database.sql**
 
-10. **ddev snapshot** - Creates a snapshot of the local development environment. Example: **ddev snapshot my_snapshot**
+10. **ddev snapshot** - Creates a snapshot of the local development environment. 
+    
+    Example: **ddev snapshot my_snapshot**
 
-11. **ddev db** - This command opens the database client for your ddev project, allowing you to interact with the database. Example: **ddev db**
+11. **ddev db** - This command opens the database client for your ddev project, allowing you to interact with the database. 
+    
+    Example: **ddev db**
 
-12. **ddev exec** - This command allows you to run a command inside the web container of your ddev project. Example: **ddev exec drush cr**
+12. **ddev exec** - This command allows you to run a command inside the web container of your ddev project. 
+    
+    Example: **ddev exec drush cr**
    **Note:** We can also use like that **ddev drush cr** or **ddev composer install** 
    
-13. **ddev logs** - This command allows you to view the logs for your ddev project. Example: **ddev logs**
+13. **ddev logs** - This command allows you to view the logs for your ddev project. 
+    
+    Example: **ddev logs**
 
-14. **ddev list** - This command lists all of your ddev projects. Example: **ddev list**
+14. **ddev list** - This command lists all of your ddev projects. 
+    
+    Example: **ddev list**
 
-15. **ddev delete** - This command deletes a ddev project and all of its associated containers. Example: **ddev delete**
+15. **ddev delete** - This command deletes a ddev project and all of its associated containers. 
+    
+    Example: **ddev delete**
 
-16. **ddev poweroff** - This command stops all running ddev projects. Example: **ddev poweroff**
+16. **ddev poweroff** - This command stops all running ddev projects. 
+    
+    Example: **ddev poweroff**
 
 [<< Previous Page](README.md)
