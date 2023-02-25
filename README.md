@@ -70,3 +70,5 @@ $ curl -fsSL https://raw.githubusercontent.com/drud/ddev/master/scripts/install_
 $ mkcert -install
 ```
 4. Verify the installation by running the **"ddev"** command in a terminal. This should display the DDEV help menu.
+
+[Next Page >>](ddev-drupal.md)
