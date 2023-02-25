@@ -1,4 +1,4 @@
-## How to install New Drupal using DDEV? ##
+## How to install New Drupal project using DDEV? ##
 
 To install new drupal project follow these steps:
 
