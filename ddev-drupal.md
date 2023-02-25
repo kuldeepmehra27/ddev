@@ -70,7 +70,7 @@ These lines tell DDEV to run composer install after starting the containers, and
 
 - In your DDEV environment, run the ddev import-db command to import the database into your site.
 
-  Example: **ddev import-db --src=/path/to/your/database-export-file.sql or database-export-file.sql.gz**
+  Example: **ddev import-db --src=/path/to/your/drupal-db.sql or drupal-db.sql.gz**
   
    ![DDEV db import](/images/ddev-db-import.png)
   
