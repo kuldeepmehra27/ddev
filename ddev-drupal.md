@@ -59,14 +59,16 @@ To migrate existing drupal project follow below steps:
 hooks:
   post-start:
     - exec: composer install
-  post-db-import:
+  post-import-db:
     - exec: drush cr
 ```
-These lines tell DDEV to run composer install after starting the containers, and to run drush cr after importing the database. This will ensure that your Drupal site is set up correctly.
+   These lines tell DDEV to run composer install after starting the containers, and to run drush cr after importing the database. This will ensure that   your Drupal site is set up correctly.
+
+- Run the **ddev start** command to start your DDEV environment. This command will create and start the necessary containers for your Drupal website.
 
 - You will need to export the database from your existing drupal site and import it into your DDEV environment. To do this, first export the database from your existing site using a tool like phpMyAdmin or the command line. Save the database export file to a location you can access from your DDEV environment.
 
-**Note:** Clear your cache before exporting your database. This will help you save more space.
+  **Note:** Clear your cache before exporting your database. This will help you save more space.
 
 - In your DDEV environment, run the ddev import-db command to import the database into your site.
 
@@ -74,13 +76,11 @@ These lines tell DDEV to run composer install after starting the containers, and
   
    ![DDEV db import](/images/ddev-db-import-ss.png)
   
-- Run the **ddev start** command to start your DDEV environment. This command will create and start the necessary containers for your Drupal website.
-  
 - You can use the **ddev describe** command to get information about your site, including the URL you can use to access it in your web browser.
 
    ![DDEV describe](/images/ddev-describe.png)
    
-### Note: If you face any issues, remove everything and start again.(ddev poweroff && ddev delete --remove-data) ###
+### Note: If you face any issues, remove everything and start again.(ddev poweroff && ddev stop --unlist project-name && ddev delete --all) ###
 
 ## [DDEV most used commands](https://ddev.readthedocs.io/en/latest/users/usage/cli/) ##
 
