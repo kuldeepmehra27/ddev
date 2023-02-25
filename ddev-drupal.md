@@ -13,3 +13,6 @@ https://ddev.readthedocs.io/en/stable/users/quickstart/#drupal
 **ddev xdebug:** Enables xdebug
 **ddev drush:** Direct access to the drush CLI. For example: ddev drush cr
 **ddev logs:** To display the apache log
+
+
+[<< Previous Page](README.md)
