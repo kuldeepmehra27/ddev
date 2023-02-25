@@ -80,7 +80,7 @@ These lines tell DDEV to run composer install after starting the containers, and
 
    ![DDEV describe](/images/ddev-describe.png)
    
-### Note: If you face any issues, remove everything and start again. ###
+### Note: If you face any issues, remove everything and start again.(ddev poweroff && ddev delete --remove-data) ###
 
 ## [DDEV most used commands](https://ddev.readthedocs.io/en/latest/users/usage/cli/) ##
 
