@@ -72,7 +72,7 @@ These lines tell DDEV to run composer install after starting the containers, and
 
   Example: **ddev import-db --src=/path/to/your/drupal-db.sql or drupal-db.sql.gz**
   
-   ![DDEV db import](/images/ddev-db-import.png)
+   ![DDEV db import](/images/ddev-db-import-ss.png)
   
 - Run the **ddev start** command to start your DDEV environment. This command will create and start the necessary containers for your Drupal website.
   
