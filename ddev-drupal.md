@@ -86,7 +86,7 @@ hooks:
 
 1. **ddev config:** This command is used to create a new configuration file for your project. The configuration file specifies the settings for your local development environment, such as the web server, database, and PHP version. 
 
-  Example: **ddev config**
+    Example: **ddev config**
 
     Running this command will prompt you for information about your project, such as the name of your project, the web server you want to use (e.g. Apache or Nginx), and the version of PHP you want to use. Once you have provided all the necessary information, Ddev will generate a configuration file (.ddev/config.yaml) in your project directory.
 
